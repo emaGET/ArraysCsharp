@@ -1,4 +1,5 @@
 using System;
+using System.Globalization;
 
 namespace ArraysCsharp
 {
@@ -42,23 +43,42 @@ namespace ArraysCsharp
             //     Console.Write(fruit + ", ");
             // }
             
-            string[] pin = new string[4];
+            
+            // string[] pin = new string[4];
+            //
+            // int i = 0;
+            //
+            // Console.WriteLine("Please enter your pin, one number at a time.");
+            // while (i < pin.Length)
+            // {
+            //     Console.Write("Enter your pin: ");
+            //     pin[i] = Console.ReadLine();
+            //     i++;
+            // }
+            //
+            // Console.WriteLine("Your PIN is: ");
+            // foreach (string pinTot in pin)
+            // {
+            //     Console.Write(pinTot);
+            // }
+            
+            
+            // time to redo everything from "while" to "for" loop
+            // context: we want to see the scores from a football team
 
-            int i = 0;
+            int[] scoresIta = new int[3];
+            scoresIta[0] = 88;
+            scoresIta[1] = 72;
+            scoresIta[2] = 95;
             
-            Console.WriteLine("Please enter your pin, one number at a time.");
-            while (i < pin.Length)
+            Console.WriteLine("In the first three matches, Italy has scored the following goals:");
+
+            for (int i = 0; i < scoresIta.Length; i++)
             {
-                Console.Write("Enter your pin: ");
-                pin[i] = Console.ReadLine();
-                i++;
+                Console.WriteLine($"Match {i + 1}= {scoresIta[i]}");
             }
-            
-            Console.WriteLine("Your PIN is: ");
-            foreach (string pinTot in pin)
-            {
-                Console.Write(pinTot);
-            }
+
+
         }
     }
 }
